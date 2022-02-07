@@ -1,6 +1,7 @@
 # Gallery image
 
-<img src="./img/readme.gif" style="margin: 15px 0px;">
+<img src="./img/readme-ss_2.png" style="margin: 15px 0px;">
+<img src="./img/readme-ss_1.png" style="margin: 15px 0px;">
 
 > # About project
 
