@@ -1,7 +1,7 @@
-const thumbnails = document.querySelectorAll(".border-ape__img");
+const thumbnails = document.querySelectorAll(".thumbnail");
 const popup = document.querySelector(".popup__container");
 const popupClose = document.querySelector(".btn__close");
-const popupImg = document.querySelector(".border-ape__popup");
+const popupImg = document.querySelector(".img__popup");
 const arrowLeft = document.querySelector(".prev__img");
 const arrowRight = document.querySelector(".next__img");
 

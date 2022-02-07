@@ -21,7 +21,7 @@ body {
   flex-wrap: wrap;
 }
 
-.image__container .border-ape__img {
+.image__container .thumbnail {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 350px;
@@ -31,7 +31,7 @@ body {
   margin: 10px 15px;
 }
 
-.border-ape__img:hover {
+.thumbnail:hover {
   transform: scale(1.1);
 }
 
@@ -51,7 +51,7 @@ body {
   animation: fadeOut 0.3s;
 }
 
-.popup__container .border-ape__popup {
+.popup__container .img__popup {
   width: 500px;
   height: 350px;
   border: 1px solid #fff;
@@ -134,7 +134,7 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .popup__container .border-ape__popup {
+  .popup__container .img__popup {
     width: 320px;
     height: 300px;
     border: 1px solid #fff;
