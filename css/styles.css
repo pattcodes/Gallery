@@ -33,16 +33,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px 0px;
-}
-
-.header__text {
-  font-size: 35px;
-  color: var(--font-color);
+  height: 5vh;
 }
 
 .header__copyright {
-  margin: 5px 0px;
   color: var(--primary-border_color);
 }
 
@@ -167,13 +161,6 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    margin: 2px 0px;
-  }
-    .image__container {
-      height: 60vh;
-    }
-  }
   .popup__container .img__popup {
     width: 320px;
     height: 300px;
