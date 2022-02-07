@@ -172,6 +172,10 @@ header {
     height: 300px;
     border: 1px solid var(--primary-border_color);
   }
+  .popup__container {
+    min-width: 100%;
+    min-height: 100%;
+  }
   .image__container .border-ape__img {
     width: 250px;
     height: 180px;
