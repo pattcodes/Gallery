@@ -4,7 +4,7 @@ const popupClose = document.querySelector(".btn__close");
 const popupImg = document.querySelector(".img__popup");
 const arrowLeft = document.querySelector(".prev__img");
 const arrowRight = document.querySelector(".next__img");
-const btnDownload = document.querySelectorAll(".btn__download");
+const btnDownload = document.querySelector(".btn__download");
 
 let currentImg;
 
@@ -14,6 +14,8 @@ const nextImg = () => {
     }
     currentImg++;
     popupImg.src = thumbnails[currentImg].src;
+    btnDownload.href = thumbnails[currentImg].src;
+
 }
 
 const prevImg = () => {
@@ -23,7 +25,10 @@ const prevImg = () => {
         currentImg--;
     }
     popupImg.src = thumbnails[currentImg].src;
+    btnDownload.href = thumbnails[currentImg].src;
+
 }
+
 
 const popupCloseInterior = () => {
     popup.classList.add("fadeOut");
@@ -37,7 +42,7 @@ thumbnails.forEach((thumbnails, index) => {
     thumbnails.addEventListener('click', (e) => {
         popup.classList.remove("hidden");
         popupImg.src = e.target.src;
-        btnDownload.src = e.target.src;
+        btnDownload.href = e.target.src;
         currentImg = index;
      })
 });
