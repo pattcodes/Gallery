@@ -1,3 +1,5 @@
+@import url(./font.css);
+
 :root {
   --dark: #111;
   --darker: #000;
@@ -24,7 +26,7 @@ body {
 
 a {
   text-decoration: none;
-  color: crimson;
+  color: blueviolet;
 }
 
 header {
@@ -41,7 +43,9 @@ header {
 }
 
 .underline {
+  font-family: "athleticOutfit", sans-serif;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .image__container {
@@ -129,6 +133,8 @@ header {
 .btn__download {
   padding: 15px;
   border-radius: 50%;
+  max-width: 50%;
+  margin: 0 auto;
   border: 2px solid var(--secondary-border_color);
   background-color: transparent;
   color: var(--font-color);
@@ -161,19 +167,23 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    min-height: 20vh;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .popup__container .img__popup {
     width: 320px;
     height: 300px;
     border: 1px solid var(--primary-border_color);
   }
   .popup__container {
-    max-height: 100vh;
-    max-width: 100vw;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+    height: auto;
+    min-width: 100%;
   }
-  .image__container .border-ape__img {
+
+  .image__container .thumbnail {
     width: 250px;
     height: 180px;
     flex-wrap: wrap;
