@@ -24,9 +24,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a {
+.underline__href {
   text-decoration: none;
   color: blueviolet;
+  transition: all 0.5s;
+}
+
+.underline__href:hover {
+  color: orangered;
 }
 
 header {
@@ -131,7 +136,7 @@ header {
 }
 
 .btn__download {
-  padding: 15px;
+  padding: 15px 17px;
   border-radius: 50%;
   max-width: 50%;
   margin: 0 auto;

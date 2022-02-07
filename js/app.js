@@ -4,7 +4,7 @@ const popupClose = document.querySelector(".btn__close");
 const popupImg = document.querySelector(".img__popup");
 const arrowLeft = document.querySelector(".prev__img");
 const arrowRight = document.querySelector(".next__img");
-const downloadImg = document.querySelector(".downloadButton");
+const btnDownload = document.querySelectorAll(".btn__download");
 
 let currentImg;
 
@@ -33,10 +33,11 @@ const popupCloseInterior = () => {
     }, 310) // 300 ms === 0.3s
 }
 
-thumbnails.forEach((thumbnails, index)=> {
+thumbnails.forEach((thumbnails, index) => {
     thumbnails.addEventListener('click', (e) => {
         popup.classList.remove("hidden");
         popupImg.src = e.target.src;
+        btnDownload.src = e.target.src;
         currentImg = index;
      })
 });
@@ -73,3 +74,5 @@ document.addEventListener('click', (e) => {
         popupCloseInterior();
     }
 })
+
+
