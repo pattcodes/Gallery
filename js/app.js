@@ -4,6 +4,7 @@ const popupClose = document.querySelector(".btn__close");
 const popupImg = document.querySelector(".img__popup");
 const arrowLeft = document.querySelector(".prev__img");
 const arrowRight = document.querySelector(".next__img");
+const downloadImg = document.querySelector(".downloadButton");
 
 let currentImg;
 
@@ -29,7 +30,7 @@ const popupCloseInterior = () => {
     setTimeout(() => {
         popup.classList.add("hidden");
         popup.classList.remove("fadeOut");
-    }, 300) // 300 ms === 0.3s
+    }, 310) // 300 ms === 0.3s
 }
 
 thumbnails.forEach((thumbnails, index)=> {
@@ -60,6 +61,9 @@ document.addEventListener('keydown', (e) => {
         prevImg();
     } 
     if(e.code === "Escape" || e.keycode === 27) {
+        popupCloseInterior();
+    }
+    if(e.code === "Space" || e.keycode === 32) {
         popupCloseInterior();
     }
 })
