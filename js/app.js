@@ -63,3 +63,9 @@ document.addEventListener('keydown', (e) => {
         popupCloseInterior();
     }
 })
+
+document.addEventListener('click', (e) => {
+    if(e.target === popup) {
+        popupCloseInterior();
+    }
+})
