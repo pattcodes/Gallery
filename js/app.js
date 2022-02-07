@@ -30,7 +30,7 @@ const prevImg = () => {
 }
 
 
-const popupCloseInterior = () => {
+const closePopup = () => {
     popup.classList.add("fadeOut");
     setTimeout(() => {
         popup.classList.add("hidden");
@@ -48,7 +48,7 @@ thumbnails.forEach((thumbnails, index) => {
 });
 
 popupClose.addEventListener('click', () => {
-    popupCloseInterior();
+    closePopup();
 })
 
 arrowRight.addEventListener('click', () => {
@@ -67,17 +67,12 @@ document.addEventListener('keydown', (e) => {
         prevImg();
     } 
     if(e.code === "Escape" || e.keycode === 27) {
-        popupCloseInterior();
-    }
-    if(e.code === "Space" || e.keycode === 32) {
-        popupCloseInterior();
+        closePopup();
     }
 })
 
 document.addEventListener('click', (e) => {
     if(e.target === popup) {
-        popupCloseInterior();
+        closePopup();
     }
 })
-
-

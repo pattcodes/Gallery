@@ -22,13 +22,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.underline__href {
+/* Header */
+
+.github__href {
   text-decoration: none;
   color: blueviolet;
   transition: all 0.5s;
 }
 
-.underline__href:hover {
+.github__href:hover {
   color: orangered;
 }
 
@@ -41,21 +43,18 @@ header {
   min-height: 10vh;
 }
 
-.header__text {
+.header__heading {
   color: var(--font-color);
-  font-size: 5rem;
+  font-size: 42px;
 }
 .header__copyright {
+  margin: 3px 0px;
   color: var(--primary-border_color);
 }
 
-.underline {
-  font-family: "athleticOutfit", sans-serif;
-  cursor: pointer;
-  font-size: 20px;
-}
+/* Main */
 
-.image__container {
+main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +63,7 @@ header {
   margin: auto;
 }
 
-.image__container .thumbnail {
+main .thumbnail {
   border: 1px solid var(--primary-border_color);
   border-radius: 10px;
   width: 350px;
@@ -77,6 +76,8 @@ header {
 .thumbnail:hover {
   transform: scale(1.1);
 }
+
+/* Popup container */
 
 .popup__container {
   position: absolute;
@@ -155,6 +156,8 @@ header {
   display: none;
 }
 
+/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -172,6 +175,8 @@ header {
     opacity: 0;
   }
 }
+
+/* Mobile version */
 
 @media screen and (max-width: 800px) {
   body {
