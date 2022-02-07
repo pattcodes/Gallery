@@ -2,9 +2,9 @@
 
 <img src="./img/readme.gif" style="margin: 15px 0px;">
 
-> ## About project
->
-> It's gallery image include popup, previous button, next button and close button.
+> # About project
+
+It's gallery image include popup, previous button, next button and close button.
 
 I added also to project functionality using KEY from your keyboard
 
